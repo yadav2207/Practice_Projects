@@ -1,0 +1,20 @@
+body {
+  background-image: url(images/home.jpg);
+  font-weight: bolder;
+  color: yellow;
+  font-size: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 500px;
+}
+
+a {
+  color: blue;
+}
+table {
+  background-color: rgba(0, 0, 0, 0.9);
+  margin-bottom: 500px;
+}
+th {
+  color: white;
+}
