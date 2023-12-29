@@ -71,7 +71,7 @@ a {
     background: var(--primary-color);
 }
 .home_sec{
-    background: url(../images//Rock.webp);
+    background: url(Images/Rock.webp);
     background-size: cover;
     background-repeat: no-repeat;
     height: 80vh;
