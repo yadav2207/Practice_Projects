@@ -43,10 +43,10 @@ document.addEventListener("DOMContentLoaded", () => {
         }
       }, step);
   }
-  counter("count1", 0, 5887, 3000);
-  counter("count2", 100, 6583, 2500);
-  counter("count3", 0, 6987, 3000);
-  counter("count4", 0, 7896, 3000);
+  counter("count1", 0, 10000, 25000);
+  counter("count2", 100, 12000, 2500);
+  counter("count3", 0, 8000, 3000);
+  counter("count4", 0, 9000, 3000);
 });
 //our partner
 var swiper = new Swiper(".our-partner", {
@@ -54,7 +54,7 @@ var swiper = new Swiper(".our-partner", {
   spaceBetween: 30,
   loop: true,
   autoplay: {
-    delay: 2000,
+    delay: 1000,
   },
   breakpoints: {
     " 991": {

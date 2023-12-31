@@ -73,18 +73,19 @@ a {
 .home_sec{
     background: url(Images/Rock.webp);
     background-size: cover;
-    background-repeat: no-repeat;
-    height: 80vh;
+      background-position: center;
+    height: 100vh;
     width: 100%;
 }
 .home_form{
-    width: 400px;
+    width: 80%;
+    max-width: 400px;
     background: rgba(0, 0 , 0 / 10%);
     display: flex;
     position: absolute;
     justify-content: center;
-    right: 5%;
-    top: 33%;
+    right: 10%;
+    top: 25%;
     flex-direction: column;
     align-items: center;
     padding: 3rem 0;
@@ -142,16 +143,17 @@ z-index: 0;
 .services-sec{
    display: flex;
    justify-content: center;
+   flex-wrap: wrap;
    width: 100%;
 
 }
 .services-sec .card-container{
 width: 50%;
-
+position: relative;
+margin-bottom: 2rem;
 }
 .services-sec .card-container:first-child{
     background: var(--primary-color);
-    position: relative;
 }
 .services-sec .card-container:first-child img{
     position: absolute;
@@ -175,6 +177,7 @@ width: 50%;
 
 .service-card{
     margin-bottom: 2rem;
+    width: 100%;
 }
 .service-card .card-title{
     display: flex;
@@ -197,7 +200,7 @@ font-size: 13px;
    color: #fff;
    line-height: 21px;
    width:80%;
-   opacity: .7;
+   opacity: 0.7;
 }
 .pricing-sec{
     padding: 2rem 0;
@@ -295,16 +298,19 @@ border-left-color: var(--primary-color);
     margin-top: 2rem;
     display: flex;
     gap: 3rem;
+    flex-wrap: wrap;
     justify-content: center;
 }
 .gallery-card{
    width: 380px;
-   height: 320px;
+   height: auto;
 box-shadow: 0 0 20px #000;
+margin-bottom: 2rem;
 }
 .gallery-card img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .about-sec{
@@ -419,6 +425,85 @@ footer .subscribeForm button{
     letter-spacing:1px ;
     font-size:16px ;
 }
+@media only screen and (max-width: 768px) {
+    .header_Sec {
+        flex-direction: column;
+        height: auto;
+    }
 
+    .logo {
+        margin-bottom: 1rem;
+    }
+
+    .nav_menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav_menu li {
+        padding: 1rem;
+        border-bottom: 1px solid var(--primary-color);
+    }
+
+    .home_form {
+        width: 80%;
+        right: 10%;
+        top: 55%;
+    }
+
+    .services-sec .card-container {
+        width: 100%;
+       height: auto;
+       margin-bottom: 400px;
+       
+    }
+    .services-sec .card-container .cell{
+        background-position: center;
+        object-fit: cover;
+      float: right;
+    }
+
+    .service-card p {
+        padding-left: 1rem;
+    }
+
+    .pricing-row {
+        flex-direction: column;
+    }
+
+    .price-card {
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+
+    .gallery-row {
+        flex-direction: column;
+    }
+
+    .gallery-card {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .about-sec {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-card {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    footer .subscribeForm,
+    footer .footer_nav {
+        width: 100%;
+    }
+
+    footer .footer_nav .footer_menu {
+        margin: 1rem 0;
+    }
+}
 
 /* chandan codes how to crate gum webstie by chandan code */
